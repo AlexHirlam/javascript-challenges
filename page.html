@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<head>
+</head>
+<script>
+
+// Find the Index:
+/*
+Create a function that takes an array and a string as arguments and return the index of the string.
+
+['hi', 'edabit', 'fgh', 'abc'], 'fgh' ➞ 2
+['Red', 'blue', 'Blue', 'Green'], 'blue' ➞ 1
+['a', 'g', 'y', 'd'], 'd' ➞ 3
+['Pineapple', 'Orange', 'Grape', 'Apple'], 'Pineapple' ➞ 0
+
+*/
+
+var array_a = ['hi', 'edabit', 'fgh', 'abc'];
+var index_a = array_a.indexOf('fgh');
+console.log(array_a[2] + ' ➞ ' + index_a);
+
+var array_b = ['Red', 'blue', 'Blue', 'Green'];
+var index_b = array_b.indexOf('blue');
+console.log(array_b[1] + ' ➞ ' + index_b);
+
+var array_c = ['a', 'g', 'y', 'd'];
+var index_c = array_c.indexOf('d');
+console.log(array_c[3] + ' ➞ ' + index_c);
+
+var array_d = ['Pineapple', 'Orange', 'Grape', 'Apple'];
+var index_d = array_d.indexOf('Pineapple');
+console.log(array_d[0] + ' ➞ ' + index_d);
+
+
+//Reverse the Order of a String:
+/*
+Create a function that takes a string as its argument and returns the string in reversed order.
+
+"Hello World" ➞ "dlroW olleH"
+"The quick brown fox." ➞ ".xof nworb kciuq ehT"
+"Edabit is really helpful!" ➞ "!lufpleh yllaer si tibadE"
+
+*/
+
+var array;
+function reverseString(str) {
+ array = str.split("");
+ array.reverse();
+ str = array.join('');
+ return str;
+}
+
+var string_a = reverseString("Hello World"); //➞ "dlroW olleH"
+var string_b = reverseString("The quick brown fox"); //➞ ".xof nworb kciuq ehT"
+var string_c = reverseString("Edabit is really helpful!"); //➞ "!lufpleh yllaer si tibadE"
+
+console.log(' ➞ ' + string_a);
+console.log(' ➞ ' + string_b);
+console.log(' ➞ ' + string_c);
+
+
+//0 to 60 kph:
+/*
+Your task is to drive your car from 1 to 60 kilometers per hour by printing a pattern. A hyphen represents the speed of cars. One hyphen is counted as 1 kph.
+
+1 kph ➞ "-"
+5 kph ➞ "-----"
+3 kph ➞ "---"
+
+*/
+
+var dash = "-";
+var speed = 1;
+var text = "";
+for (speed = 1; speed <= 60; speed++) {
+  text += speed + " kph" + ' ➞ ' + dash.repeat(speed) + " "  + '\n';
+}
+
+console.log(text);
+
+
+</script>
+<body>
+</body>
